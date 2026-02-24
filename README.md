@@ -1,16 +1,76 @@
-# React + Vite
+# 🎬 Movie App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React-based Movie Discovery Web Application built using TMDB API and Firebase Authentication.
 
-Currently, two official plugins are available:
+This application allows users to explore movies, view details, watch trailers, see cast information, and manage favorite movies with secure login functionality.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🔎 Search Movies
+- 🎥 View Movie Details
+- 🎬 Watch Trailers (YouTube Integration)
+- 👥 Top Cast Section
+- ❤️ Add / Remove Favorites
+- 🔐 Google Authentication (Firebase)
+- 🌍 Language-Based Filtering
+- 📱 Responsive Design
+- 🎞 Netflix-style UI
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+**Frontend:**
+- React.js (Vite)
+- React Router v6
+- Context API
+- Bootstrap / Custom CSS
+
+**Backend Services:**
+- Firebase Authentication
+- Firestore Database
+
+**API:**
+- TMDB (The Movie Database) API
+
+---
+
+## 📂 Project Structure
+
+
+src/
+├── assets/components/
+├── contexts/
+├── css/
+├── pages/
+├── services/
+├── firebase.js
+├── App.jsx
+├── main.jsx
+
+
+---
+
+## 🔑 Environment Variables
+
+Create a `.env` file in the root folder and add:
+VITE_TMDB_KEY=your_tmdb_api_key
+
+## ⚙ Installation & Setup
+1. Clone the repository:
+git clone https://github.com/Bharathi0608/Movie-App.git
+2. Navigate to project folder:
+cd frontend
+3. Install dependencies:
+npm install
+
+Run Development Server
+npm run dev
+
+ Open in Browser
+
+After running the command, open:
+
+http://localhost:5173
