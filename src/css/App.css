@@ -1,0 +1,261 @@
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.trailer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.trailer-modal {
+  position: relative;
+  width: 80%;
+  max-width: 900px;
+  background: black;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.trailer-close {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.cast-scroll,
+.similar-scroll,
+.provider-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+.cast-scroll::-webkit-scrollbar,
+.similar-scroll::-webkit-scrollbar,
+.provider-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.cast-card,
+.similar-card,
+.provider-card {
+  min-width: 150px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  color: white;
+}
+
+.cast-card img,
+.similar-card img,
+.provider-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.cast-card:hover,
+.similar-card:hover,
+.provider-card:hover {
+  transform: scale(1.08);
+}
+
+.login-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.login-modal {
+  background: #1c1c1c;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 320px;
+}
+/* 🔥 Netflix Style Similar Movies */
+.similar-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+.similar-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.similar-card {
+  min-width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.similar-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.similar-card:hover {
+  transform: scale(1.08);
+}
+/* 🔥 Netflix Style Top Cast */
+.cast-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+.cast-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.cast-card {
+  min-width: 160px;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.cast-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.cast-card:hover {
+  transform: scale(1.08);
+}
+
+.cast-name {
+  margin-top: 8px;
+  font-size: 14px;
+}
+.slider-container {
+  position: relative;
+}
+
+.cast-scroll,
+.similar-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 40px;
+}
+
+.cast-scroll::-webkit-scrollbar,
+.similar-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.cast-card,
+.similar-card {
+  min-width: 180px;
+  transition: transform 0.3s ease;
+}
+
+.cast-card img,
+.similar-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.cast-card:hover,
+.similar-card:hover {
+  transform: scale(1.08);
+}
+
+.slide-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.7);
+  border: none;
+  color: white;
+  font-size: 28px;
+  padding: 8px 14px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.slide-btn.left {
+  left: 0;
+}
+
+.slide-btn.right {
+  right: 0;
+}
+
+.slide-btn:hover {
+  background: red;
+}
