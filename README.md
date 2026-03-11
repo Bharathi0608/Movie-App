@@ -74,3 +74,10 @@ npm run dev
 After running the command, open:
 
 http://localhost:5173
+
+# 🎬 Movie Discovery App
+
+A React movie discovery application built using **React, TMDB API, and Firebase Authentication**.
+
+## 🚀 Live Demo
+https://moviediscovery-app.vercel.app
