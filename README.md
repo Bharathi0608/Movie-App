@@ -6,6 +6,30 @@ This application allows users to explore movies, view details, watch trailers, s
 
 ---
 
+# 📸 Screenshots
+
+## 🏠 Home Page
+
+![Home Page](screenshots/home.png)
+
+---
+
+## 🎬 Movie Details
+
+![Movie Details](screenshots/details.png)
+
+---
+
+## ❤️ Favorites
+
+![Favorites](screenshots/favorites.png)
+
+---
+
+## ▶️ Trailer Page
+
+![Trailer Page](screenshots/trailor.png)
+
 ## 🚀 Features
 
 - 🔎 Search Movies
